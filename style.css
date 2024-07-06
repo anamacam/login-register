@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+.container {
+    background: #fff;
+    width: 450px;
+    padding: 1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    margin: 0 2rem;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.3rem;
+    margin-bottom: 0.4rem;
+    color: #4169e1;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group i {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4169e1;
+}
+
+input {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 0.5rem 0 0.5rem 2rem;
+    font-size: 15px;
+}
+
+input:focus {
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px solid hsl(327, 90%, 28%);
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+label {
+    color: #757575;
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s ease all;
+    pointer-events: none;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -1.5em;
+    left: 0.5rem;
+    color: hsl(327, 90%, 28%);
+    font-size: 12px;
+}
+
+.recover {
+    text-align: right;
+}
+
+.btn {
+    display: block;
+    width: 80%;
+    padding: 0.5rem;
+    background-color: #4169e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 1rem auto;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4169e1;
+}
+
+.links {
+    text-align: center;
+}
+
+.links p {
+    margin: 1rem 0;
+    color: #757575;
+}
+
+.links button {
+    background: none;
+    border: none;
+    color: #4169e1;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.links button:hover {
+    text-decoration: underline;
+}
